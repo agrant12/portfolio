@@ -7,7 +7,6 @@ body {
   color: #444;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
-  min-width: 1024px;
   padding: 0;
 }
 
@@ -411,7 +410,70 @@ form button{
 
 
 @media screen and (max-width: 768px){
+  body{
+    max-width: 768px !important;
+  }
 
+  header{
+    width: 768px;
+  }
+
+  .branding{
+    left: 5%;
+  }
+
+  .name{
+    left: 17%;
+  }
+  
+  .title{
+    left: 17%;
+  }
+
+  footer{
+    width: 768px;
+  }
+
+  .copyright{
+    left: -18%;
+  }
+
+  .social{
+    left: 4%;
+  }
+
+  nav{
+    margin-right: 0;
+  }
+
+  nav a{
+    font-size: 16px;
+    margin: 10px;
+  }
+
+  .container{
+    width: 768px;
+    min-height: 800px;
+  }
+
+  #contact{
+    float: none;
+    margin: 0 auto;
+  }
+
+  .contact_info{
+    float: none;
+    margin: 0 auto;
+  }
+
+  form{
+    clear: both;
+  }
+
+  #work{
+    margin: 0 auto 40px;
+    float: none;
+  }
 }
 
 @media screen and (max-width: 480px){
