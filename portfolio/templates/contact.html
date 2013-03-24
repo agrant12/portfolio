@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+<div id="contact">
+	<form method="post" action="">
+		<h2>GET IN TOUCH!</h2>
+		<p>Please fill out this form to contact me. I will respond to your inquiry within 24hrs. Thank you!</p>
+		<label for="name">Name:* </label><br /><input type="text" name="name" value="" required="required" /><br /><br />
+		<label for="email">Email:* </label><br /><input type="text" name="email" value="" required="required" /><br /><br />
+		<label for="inquiry">Inquiry:* </label><br /><select id="inquiry" name="inquiry"> 
+			<option value="general">General</option> 
+            <option value="web design">Web Design/Development</option>  
+            <option value="web development">Branding</option>  
+            <option value="application">Application Development</option>  
+        </select><br />  <br />
+        <label for="message">Message:*</label><br />
+		<textarea></textarea><br /><br />
+		<button id="submit-button">Send</button> <br />
+	</form>
+</div>
+
+<div class="contact_info">
+	<h2>Availability</h2>
+	<p>I'm currently available for freelance, remote opportunities, based in develoment and design.</p>
+	<div class="social">
+        <h2>Connect with me:</h2>
+        <a class="facebook" href="https://www.facebook.com/alvin.grant.3" target="_blank"></a>
+        <a class="twitter" href="https://twitter.com/agrantdesigns" target="_blank"></a>
+        <a class="linkedin" href="https://www.linkedin.com/in/alvingrant/" target="_blank"></a>
+    </div>
+</div>
+<div class="clear"></div>
+</div>
+
+{% endblock %}
