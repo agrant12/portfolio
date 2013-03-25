@@ -410,6 +410,15 @@ form button{
 
 
 @media screen and (max-width: 768px){
+
+  .home_image{
+    width: 768px;
+  }
+
+  .home_image h3{
+    width: 300px;
+  }
+
   body{
     max-width: 768px !important;
   }
@@ -477,6 +486,107 @@ form button{
 }
 
 @media screen and (max-width: 480px){
+  .home_image{
+    width: 480px;
+  }
+
+  .home_image h3{
+    width: 200px;
+  }
+
+  body{
+    max-width: 480px !important;
+  }
+
+  header{
+    width: 480px;
+  }
+
+  header nav{
+    float: none;
+    left: 15%;
+    margin-top: 0;
+    position: relative;
+    top: 5px;
+    width: 350px;
+  }
+
+  header nav a{
+    margin: 8px;
+  }
+
+
+  footer{
+    width: 480px;
+    text-align: center;
+  }
+
+  footer nav{
+    display: none;
+    visibility: hidden;
+  }
+
+  footer nav a{
+    clear: both;
+    float: none;
+  }
+
+  footer p{
+    width: 120px;
+  }
+
+  .copyright{
+    left: -38%;
+  }
+
+  .social{
+    width: 300px;
+  }
+
+  .branding{
+    left: 42%;
+  }
+
+  .name{
+    display: none;
+    visibility: hidden;
+  }
+
+  .title{
+    left: 22%;
+    margin: 0 auto;
+    top: 100px;
+  }
+
+  .title h3{
+    font-size: 16px;
+    color: #000;
+  }
+
+  .name h3{
+    font-size: 30px;
+  }
+
+  .container{
+    width: 480px;
+  }
+
+  #contact{
+    width: 320px;
+  }
+
+  form{
+    width: 320px;
+    border: 1px solid #000;
+  }
+
+  .social h2{
+    font-size: 24px;
+  }
+
+  .contact_info h2{
+    font-size: 24px;
+  }
 
 }
 
