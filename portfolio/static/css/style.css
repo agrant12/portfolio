@@ -495,7 +495,7 @@ form button{
   }
 
   body{
-    max-width: 480px !important;
+    max-width: 480px;
   }
 
   header{
@@ -591,5 +591,45 @@ form button{
 }
 
 @media screen and (max-width: 320px){
+  body{
+    width: 320px;
+  }
+  .home_image{
+    width: 320px;
+  }
+
+  .home_image h3{
+    width: 200px;
+  }
+
+  header{
+    width: 320px;
+  }
+
+  header nav{
+    visibility: hidden;
+    display: none;
+  }
+
+  header nav a{
+    margin: 8px;
+  }
+
+  #work{
+    margin: 0 5px 20px;
+  }
+
+  #work, .front, .back{
+    height: 180px;
+    width: 300px;
+  }
+
+  #work img{
+    width: 300px;
+  }
+
+  footer{
+    width: 320px;
+  }
 
 }
