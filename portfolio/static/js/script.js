@@ -5,6 +5,8 @@ jQuery(document).ready(function($){
 	if(!mobile){
 		console.log("Hey there");
 	}
+
+	var $work = $('#work');
 });
 
 

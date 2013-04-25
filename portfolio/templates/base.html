@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Alvin Grant</title>
+    <title>Alvin Grant - {{title}}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/grant_utils.js') }}"></script>
@@ -15,7 +15,7 @@
     <div class="title"><h3>{ multimedia designer & developer}</h3></div>
       <nav>
             <a href="{{ url_for('work') }}">Work</a>
-            <a href="{{ url_for('about') }}">About Me</a>
+            <a href="{{ url_for('about') }}">About</a>
             <a href="{{ url_for('blog') }}">Blog</a>
             <a href="{{ url_for('contact') }}">Contact</a>
        </nav> 
