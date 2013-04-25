@@ -10,7 +10,6 @@ Grant.utils.userAgent = function()
 	}
 };
 
-
 if (/(iPhone|iPad|iPod|Android)/i.test(navigator.userAgent)) {
 
 	result["is_mobile"] = true;
