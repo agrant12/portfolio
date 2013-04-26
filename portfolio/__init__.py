@@ -1,18 +1,23 @@
+""" init """
+
 from flask import Flask
+from forms import ContactForm
+from flask.ext.sqlalchemy import SQLAlchemy
 from flask.ext.mail import Message, Mail
 
-mail = Mail()
+from .config import Config
 
 portfolio = Flask(__name__)
 
-portfolio.secret_key = 'testkey'
+portfolio.config.from_object(Config)
 
-portfolio.config["MAIL_SERVER"] = "smtp.gmail.com"
-portfolio.config["MAIL_PORT"] = 465
-portfolio.config["MAIL_USE_SSL"] = True
-portfolio.config["MAIL_USERNAME"] = 'contact@example.com'
-portfolio.config["MAIL_PASSWORD"] = 'your-password'
-
+mail = Mail()
 mail.init_app(portfolio)
+
+
+db = SQLAlchemy(portfolio)
+from .models import MyTable
+db.create_all()
+
 
 from portfolio import views

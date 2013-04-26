@@ -1,13 +1,8 @@
-from flask import render_template, url_for, redirect, request, flash
+from flask import Flask, render_template, url_for, redirect, request, flash
 from portfolio import portfolio
-from flask.ext.wtf import Form, TextField, TextAreaField, SubmitField, validators, ValidationError
-
-class ContactForm(Form):
-	name = TextField("Name", [validators.Required("Please Enter Your Name")])
-	email = TextField("Email", [validators.Required("Please Enter Your Email"), validators.Email("Please Eneter Your Email")])
-	subject = TextField("Subject", [validators.Required("Please Enter A Subject")])
-	message = TextAreaField("Message", [validators.Required("Please Enter a Subject")])
-	submit = SubmitField("Send")
+from forms import ContactForm
+from flask.ext.mail import Message, Mail
+from . import mail
 
 @portfolio.route('/')
 def home():
@@ -28,13 +23,18 @@ def contact():
 			flash('All fields are required.')
 			return render_template('contact.html', 
 				title = 'Contact', 
-				form=form)
+				form = form)
 		else:
-			msg = Message(form.subject.data, sender='contact@example.com', recipients=['your_email@example.com']) 
+			msg = Message(form.subject.data, sender='contact@example.com', recipients=['alving.nyc@gmail.com']) 
 			msg.body = """
-				From: %s <%s>
-				%s""" % (form.name.data, form.email.data, form.message.data)
-			return 'Form Posted.'
+			From: %s <%s>
+			%s
+			""" % (form.name.data, form.email.data, form.message.data)
+			mail.send(msg)
+			return render_template('contact.html',
+				title = 'Contact',
+				success = True,
+				form = form)
 
 	elif request.method == 'GET':	
 		return render_template('contact.html',

@@ -3,6 +3,9 @@
 <div class="container">
 
 	<div id="contact">
+		{% if success %}
+    		<p>Thank you for your message. We'll get back to you shortly.</p>
+ 		{% else %}
 		<h2>GET IN TOUCH!</h2>
 		<p>Please fill out this form to contact me. I will respond to your inquiry within 24hrs. Thank you!</p>
 
@@ -44,5 +47,6 @@
 	<div class="clear"></div>
 
 </div>
+{% endif %}
 
 {% endblock %}
