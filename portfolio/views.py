@@ -3,6 +3,7 @@ from portfolio import portfolio
 from forms import ContactForm
 from flask.ext.mail import Message, Mail
 from . import mail
+from . import twitter
 
 @portfolio.route('/')
 def home():

@@ -1,9 +1,15 @@
 Flask==0.9
 Flask-Mail==0.8.2
+Flask-OAuth==0.12
+Flask-SQLAlchemy==0.16
 Flask-WTF==0.8.3
 Jinja2==2.6
+MySQL-python==1.2.4
+SQLAlchemy==0.8.0
 WTForms==1.0.3
 Werkzeug==0.8.3
 blinker==1.2
+httplib2==0.8
+oauth2==1.5.211
 twitter==1.9.4
 wsgiref==0.1.2

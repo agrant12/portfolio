@@ -1,5 +1,3 @@
-
-
 class Config(object):
 	""" config """
 
