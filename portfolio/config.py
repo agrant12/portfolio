@@ -9,10 +9,10 @@ class Config(object):
 	MAIL_USERNAME = 'alving.nyc@gmail.com'
 	MAIL_PASSWORD = 'brainiac86'	
 
-	DBUSER = 'root' # *************
-	DBPASS = '' # *************
-	DBHOST = 'localhost' # host ip or localhost
-	DBNAME = 'portfolio' # database name
-	DB = 'mysql' # sqlite / mysql/ postgresql
+	#DBUSER = 'root' # *************
+	#DBPASS = '' # *************
+	#DBHOST = 'localhost' # host ip or localhost
+	#DBNAME = 'portfolio' # database name
+	#DB = 'mysql' # sqlite / mysql/ postgresql
 	#: database configuration
-	SQLALCHEMY_DATABASE_URI = DB + '://' + DBUSER + ':' + DBPASS + '@' + DBHOST + '/' +DBNAME
+	#SQLALCHEMY_DATABASE_URI = DB + '://' + DBUSER + ':' + DBPASS + '@' + DBHOST + '/' +DBNAME

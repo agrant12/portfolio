@@ -6,3 +6,7 @@ class ContactForm(Form):
 	subject = TextField("Subject", [validators.Required("Please Enter A Subject")])
 	message = TextAreaField("Message", [validators.Required("Please Enter a Subject")])
 	submit = SubmitField("Send")
+
+class PostForm(Form):
+	title = TextField("Title", [validators.Required("Please Enter A Title")])
+	body = TextAreaField("Body", [validators.Required("Please Enter Text")])

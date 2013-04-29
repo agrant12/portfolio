@@ -1,9 +1,10 @@
 from flask import Flask, render_template, url_for, redirect, request, flash
 from portfolio import portfolio
-from forms import ContactForm
+from forms import ContactForm, PostForm
 from flask.ext.mail import Message, Mail
 from . import mail
 from . import twitter
+from . import POSTS_PER_PAGE
 
 @portfolio.route('/')
 def home():
@@ -47,7 +48,13 @@ def work():
 	return render_template('work.html',
 		title = 'Portfolio')
 
-@portfolio.route('/blog')
+@portfolio.route('/blog', methods = ['GET', 'POST'])
+#@portfolio.route('/blog/<init:page>', methods = ['GET', 'POST'])
 def blog():
+	form = PostForm()
+	if form.validate_on_submit():
+#		post = Post(body = post.title.data, post.body.data)
+		db.session.add(post)
+		db.session.commit()
 	return render_template('blog.html',
 		title = 'Blog')
