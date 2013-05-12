@@ -1,13 +1,11 @@
-jQuery(document).ready(function($){
+var userAgent = Grant.utils.userAgent();
 
-	var mobile = Grant.utils.userAgent();
+if(!userAgent){
+	console.log("Hey there");
+}
 
-	if(!mobile){
-		console.log("Hey there");
-	}
+var $work = $('#work');
 
-	var $work = $('#work');
-});
 
 
 
