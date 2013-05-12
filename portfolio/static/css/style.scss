@@ -240,3 +240,18 @@ form{
 	}
 }
 
+/*Work*/
+
+#work{
+	cursor: pointer;
+	height: 278px;
+	float: left;
+	overflow: hidden;
+	.back{
+		background: #fff;
+		display: none;
+		height: 280px;
+		position: relative;
+		top: -280px;
+	}
+}
