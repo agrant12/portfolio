@@ -242,16 +242,18 @@ form{
 
 /*Work*/
 
-#work{
+.work{
+	border: 1px solid #000;
 	cursor: pointer;
 	height: 278px;
 	float: left;
+	margin-right: 8px;
 	overflow: hidden;
 	.back{
 		background: #fff;
 		display: none;
 		height: 280px;
 		position: relative;
-		top: -280px;
+		top: -285px;
 	}
 }
