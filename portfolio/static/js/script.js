@@ -7,7 +7,7 @@ jQuery(document).ready(function($){
 	var $back = $('.back');
 	var defaultToggleState = true;
 
-	/* Toggle Back on Hover & Set Opacity of Front Div */
+	/* Toggle Back on Hover */
 
 	$work.on('hover', function(){
 		if (defaultToggleState){
