@@ -1,72 +1,34 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="container">
-
-	<h3 class="class_title">Featured Work</h3>
-
-	<div class="work">
-		<div class="front"><img src="{{ url_for('static', filename='img/fsl.jpg') }}" /></div>
-		<div class="back">
-			<div>Client: CBS Coporation</div>
-			<div>Product: fansportslive.com</div>
-			<div>Role: Front End Developer</div>
-			<div>Synopsis: New sports website by CBS Corporation </div>
-			<div><a href="#">Project Link</a></div>
+	<div id="main_wrapper">
+		<div id="content_01" class="tabbed_content">
+			<div class="text">1</div>
+			<div class="pictures"></div>
+		</div>
+		<div id="content_02" class="tabbed_content">
+			<div class="text">2</div>
+			<div class="pictures"></div>
+		</div>
+		<div id="content_03" class="tabbed_content">
+			<div class="text">3</div>
+			<div class="pictures"></div>
+		</div>
+		<div id="content_04" class="tabbed_content">
+			<div class="text">4</div>
+			<div class="pictures"></div>
+		</div>
+		<div id="content_05" class="tabbed_content">
+			<div class="text">4</div>
+			<div class="pictures"></div>
 		</div>
 	</div>
-
-	<div class="work">
-		<div class="front"><img src="{{ url_for('static', filename='img/radio.jpg') }}" /></div>
-		<div class="back">
-			<div class="client">Client: CBS Corporation</div>
-			<div class="project">Project: Radio.com</div>
-			<div class="role">Role: Front End Developer</div>
-			<div class="synopsis">Synopsis: CBS Corporations streaming radio platform. Users can listen to music, sports, and talk radio from multiple genres, on CBS's radio stations across the US.</div>
-			<div class="link"><a href="#">Project Link</a></div>
-		</div>
-	</div>
-
-	<div class="work">
-		<div class="front"><img src="{{ url_for('static', filename='img/recyclebank.jpg') }}" /></div>
-		<div class="back">
-			<div>Client: Recyclebank</div>
-			<div>Project: Recyclebank.com</div>
-			<div class="date"></div>
-			<div>Role: Front End Developer/Web Producer<br />Responsibilites included creating custom modules and partner pages using HTML and Javscript/jQuery on the Magento Ecommerce platform. I also was tasked with making daily updates to the website.</div>
-			<div>Synopsis: Rewards platform to encourage consumers to take "green actions" to help reduce the negative effects that people have on the enviroments.</div>
-			<div><a href="#">Project Link</a></div>
-		</div>
-	</div>
-
-	<div class="work">
-		<div class="front"><img src="{{ url_for('static', filename='img/panasonic1.jpg') }}" /></div>
-		<div class="back">
-			<div>Client: Panasonic</div>
-			<div>Project: "Toughbook Brazil"</div>
-			<div>Role: Web Producer</div>
-			<div>Synopsis:</div>
-			<div><a href="#">Project Link</a></div>
-		</div>
-	</div>
-
-	
-	
+	<li><a class="thumbnails" class="current" href="#content_01"></a></li>
+	<li><a class="thumbnails" href="#content_02"></a></li>
+	<li><a class="thumbnails" href="#content_03"></a></li>
+	<li><a class="thumbnails" href="#content_04"></a></li>
+	<li><a class="thumbnails" href="#content_05"></a></li>
 	<div class="clear"></div>
-	<h3 class="class_title">Previous Experience</h3>
-	<p>ASME <br /> 
-	Vitech Systems Group<br />
-	CancerCare<br />
-	The Art of Shinuh<br />
-	Enve Online <br />3
-	Edelwiess Salon<br />
-	Avon Products<br />
-	American Legal Media<br />
-	CUNY Queensborough Community College<br />
-	Clear Channel Radio<br />
-	Macy’s<br />
-	Real Estate Arts<br />
-	Rochdale Investment Management<br /> 
-	Man vs. Machine 
 </div>
 
 
