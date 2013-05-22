@@ -44,6 +44,9 @@ jQuery(document).ready(function($){
 			if(!$(this).hasClass('current')){
 				$(this).addClass('current').parent('li').siblings('li').find('a.current').removeClass('current');
 				$($(this).attr('href')).fadeIn("slow").siblings('.tabbed_content').hide();
+				
+				/* Smooth Scroll back to Top */
+				$("html, body").animate({ scrollTop: 0 }, "slow");
 			}
 			this.blur();
 			return false;

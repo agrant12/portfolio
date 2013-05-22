@@ -25,6 +25,7 @@ header{
 	position: fixed;
 	top: 0;
 	width: 100%;
+	z-index: 1000;
 	nav{
 		float: left;
 		height: 50px;
@@ -273,6 +274,15 @@ form{
 	background-color: #fff;
 	height: 450px;
 	width: 955px;
+	.text{
+		float: left;
+		font-family: Helvetica,Arial,sans-serif;
+		padding: 10px;
+		width: 350px; 
+	}
+	.pictures{
+		float: left;
+	}
 }
 
 li{
