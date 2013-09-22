@@ -1,43 +1,28 @@
-jQuery(document).ready(function($){
 
-	/* Set Varibales for Featured Works*/
-
-	var $work = $('.work');
-	var $front = $('.front');
-	var $back = $('.back');
-	var defaultToggleState = true;
-
-	/* Toggle Back on Hover */
-	
-	//$work.hide();
-
-	/*$work.each(function(){
-		$(this).show();
+	/*$(function(){
+		$(window).scroll(function(){
+			var offset = $(window).scrollTop();
+			$('.title_page').animate({
+				'top': offset + 'px'
+			});
+			$('.work_content').animate({
+				'top': '-' + offset + 'px'
+			});
+		});
 	});
-	
-	$work.on('hover', function(){
-		if (defaultToggleState){
-			
-			$(this).find($back).slideDown('fast');
 
-			defaultToggleState = false;
-		} else{
-			
-			$(this).find($back).slideUp('fast');
-			
-			defaultToggleState = true;
-		}
-	});*/
+
+jQuery(document).ready(function($){
 
 	/* Tabs for Work Page */
 
-	function init_tabs(){
+	/*function init_tabs(){
 		if (!$('.thumbnails').length){
 			return;
 		}
 
 		$('#main_wrapper').each(function(){
-			$(this).find('div.tabbed_content:first').show();
+			$(this).find('.tabbed_content:first').hide();
 		});
 
 		$('.thumbnails').click(function(){
@@ -46,7 +31,7 @@ jQuery(document).ready(function($){
 				$($(this).attr('href')).fadeIn("slow").siblings('.tabbed_content').hide();
 				
 				/* Smooth Scroll back to Top */
-				$("html, body").animate({ scrollTop: 0 }, "slow");
+	/*			$("html, body").animate({ scrollTop: 0 }, "slow");
 			}
 			this.blur();
 			return false;
@@ -55,6 +40,27 @@ jQuery(document).ready(function($){
 
 	jQuery(document).ready(function(){
 		init_tabs();
+	});
+});*/
+
+jQuery(document).ready(function($){
+	if (!$('.thumbnails').length){
+		return;
+	}
+
+	$('.thumbnails').click(function(e){
+		e.preventDefault();
+		$('.lightbox').fadeIn();
+		$('body').css({
+			overflow : 'hidden'
+		});
+	});
+
+	$('.lightbox').click(function(){
+		$(this).fadeOut();
+		$('body').css({
+			overflow : ''
+		});
 	});
 });
 

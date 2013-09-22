@@ -1,13 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="container">
+
 
 	<div id="contact">
+		<div class="subheader">
+			<h2>GET IN TOUCH!</h2>
+			<p>Currently available for freelance projects</p>
+		</div>
 		{% if success %}
-    		<p>Thank you for your message. We'll get back to you shortly.</p>
+    		<p>Thank you for your message. I will be in touch with you shortly.</p>
  		{% else %}
-		<h2 class="class_title">GET IN TOUCH!</h2>
-		<p class="contact">Please fill out this form to contact me. I will respond to your inquiry within 24hrs. Thank you!</p>
+		<!-- <p class="contact">Please fill out this form to contact me. I will respond to your inquiry within 24hrs. Thank you!</p> -->
 
 		{% for message in form.name.errors %}
 		 	<div class="flash">{{ message }}</div>
@@ -45,8 +48,6 @@
 	</div>
 
 	<div class="clear"></div>
-
-</div>
 {% endif %}
 
 {% endblock %}

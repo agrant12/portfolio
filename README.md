@@ -1,4 +1,4 @@
 portfolio
 =========
 
-Simple Flask app for my new portfolio site
+Simple Flask app for my web portfolio complete with custom contact form

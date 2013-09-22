@@ -10,7 +10,7 @@ class MailSetting():
 	portfolio.config["MAIL_SERVER"] = "smtp.gmail.com"
 	portfolio.config["MAIL_PORT"] = 465
 	portfolio.config["MAIL_USE_SSL"] = True
-	portfolio.config["MAIL_USERNAME"] = 'alving.nyc@gmail.com'
-	portfolio.config["MAIL_PASSWORD"] = 'brainiac86'
+	portfolio.config["MAIL_USERNAME"] = ''
+	portfolio.config["MAIL_PASSWORD"] = ''
 
 	mail.init_app(portfolio)

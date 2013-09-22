@@ -1,43 +1,40 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="container">
-	<div id="main_wrapper">
-		<div id="content_01" class="tabbed_content">
-			<div class="text">
-				<h3>Fansportslive</h3>
-				<div class="client">Client: CBS Coporation</div>
-				<div class="role">Role: Front End Developer</div>
-				<div class="tech">Tech Used: HTML5, Javascript/JQuery, CSS3, Sass, Python/Flask</div>
-				<div class="description">Synopsis: New sports website by CBS Corporation</div>
-				<div><a href="#">Project Link</a></div>
-			</div>
-			<div class="pictures"></div>
-		</div>
-		<div id="content_02" class="tabbed_content">
-			<div class="text">
-				<h3>radio.com</h3>
-			</div>
-			<div class="pictures"></div>
-		</div>
-		<div id="content_03" class="tabbed_content">
-			<div class="text">
-				<h3>Recyclebank</h3>
-			</div>
-			<div class="pictures"></div>
-		</div>
-		<div id="content_04" class="tabbed_content">
-			<div class="text">
-				<h3>Panasonic</h3>
-			</div>
-			<div class="pictures"></div>
-		</div>
-	</div>
-	<li><a class="thumbnails" class="current" href="#content_01"></a></li>
-	<li><a class="thumbnails" href="#content_02"></a></li>
-	<li><a class="thumbnails" href="#content_03"></a></li>
-	<li><a class="thumbnails" href="#content_04"></a></li>
+<section class="work">
+	<li><a id="fan" class="thumbnails" class="current" href="#content_01"></a>
+		<div class="clear"></div>
+		<p>Fansportslive</p>
+		<p>HTML / CSS / Javascript / Python</p>
+	</li>
+	<li><a class="thumbnails" href="#content_01"></a>
+		<div class="clear"></div>
+		<p>radio.com</p>
+		<p>HTML / CSS / Javascript / PHP / Wordpress</p>
+	</li>
+	<li><a class="thumbnails" href="#content_01"></a>
+		<div class="clear"></div>
+		<p>Inkloud</p>
+		<p>HTML / CSS / Javascript / PHP / Wordpress</p>
+	</li>
+	<li><a class="thumbnails" href="#content_01"></a>
+		<div class="clear"></div>
+		<p>Recyclebank</p>
+		<p>HTML / CSS / Javascript / Magento</p>
+	</li>
+	<li><a class="thumbnails" href="#content_01"></a>
+		<div class="clear"></div>
+		<p>Cancer<i>Care</i></p>
+		<p>Web Design / HTML / CSS / Wordpress</p>
+	</li>
+	<li><a class="thumbnails" href="#content_01"></a>
+		<div class="clear"></div>
+		<p>Panasonic</p>
+		<p>HTML / CSS</p>
+	</li>
+	<section class="lightbox">
+		<aside class="content"><p>Click to close</p><h3>Fansportslive</h3></aside>
+	</section>
 	<div class="clear"></div>
-</div>
-
+</section>
 
 {% endblock %}
