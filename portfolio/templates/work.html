@@ -1,30 +1,40 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="container">
-
-	<h3 class="class_title">Featured Work</h3>
-
-	<div id="work"><div class="flipper">
-	<div class="front"><img src="{{ url_for('static', filename='img/recyclebank.jpg') }}" /></div>
-	<div class="back">Panasonic<strong><br />CBS Corporation</strong></div>
-	</div>
-	</div>
-
-	<div id="work"><div class="flipper">
-	<div class="front"><img src="{{ url_for('static', filename='img/radio.jpg') }}" /></div>
-	<div class="back">Panasonic<strong><br />CBS Corporation</strong></div>
-	</div>
-	</div>
-
-	<div id="work"><div class="flipper">
-	<div class="front"><img src="{{ url_for('static', filename='img/panasonic.jpg') }}" /></div>
-	<div class="back">Panasonic<strong><br />CBS Corporation</strong></div>
-	</div>
-	</div>
-
-
-<div class="clear"></div>
-</div>
-
+<section class="work">
+	<li><a id="fan" class="thumbnails" class="current" href="#content_01"></a>
+		<div class="clear"></div>
+		<p>Fansportslive</p>
+		<p>HTML / CSS / Javascript / Python</p>
+	</li>
+	<li><a class="thumbnails" href="#content_01"></a>
+		<div class="clear"></div>
+		<p>radio.com</p>
+		<p>HTML / CSS / Javascript / PHP / Wordpress</p>
+	</li>
+	<li><a class="thumbnails" href="#content_01"></a>
+		<div class="clear"></div>
+		<p>Inkloud</p>
+		<p>HTML / CSS / Javascript / PHP / Wordpress</p>
+	</li>
+	<li><a class="thumbnails" href="#content_01"></a>
+		<div class="clear"></div>
+		<p>Recyclebank</p>
+		<p>HTML / CSS / Javascript / Magento</p>
+	</li>
+	<li><a class="thumbnails" href="#content_01"></a>
+		<div class="clear"></div>
+		<p>Cancer<i>Care</i></p>
+		<p>Web Design / HTML / CSS / Wordpress</p>
+	</li>
+	<li><a class="thumbnails" href="#content_01"></a>
+		<div class="clear"></div>
+		<p>Panasonic</p>
+		<p>HTML / CSS</p>
+	</li>
+	<section class="lightbox">
+		<aside class="content"><p>Click to close</p><h3>Fansportslive</h3></aside>
+	</section>
+	<div class="clear"></div>
+</section>
 
 {% endblock %}

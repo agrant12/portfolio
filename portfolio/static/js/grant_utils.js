@@ -1,6 +1,8 @@
 var Grant = Grant || {};
 	Grant.utils = {};
 
+var $window = $(window).width();
+
 Grant.utils.userAgent = function()
 {
 	var results = {
@@ -9,7 +11,6 @@ Grant.utils.userAgent = function()
 		"url" : ""
 	}
 };
-
 
 if (/(iPhone|iPad|iPod|Android)/i.test(navigator.userAgent)) {
 
@@ -27,4 +28,19 @@ if (/(iPhone|iPad|iPod|Android)/i.test(navigator.userAgent)) {
 		result["url"] = "";
 		result["device"] = "";
 	}
+}
+
+Grant.utils.screenSize = function()
+{
+	var script = {
+		"script" : true,
+		"src" : "random script"
+	}
+};
+
+if ( $window <= 480 ){
+
+	script["script"] = true;
+	script["src"] = 'random1';
+
 }
